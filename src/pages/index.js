@@ -1,96 +1,100 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Cell from '../components/Cell';
-import Wave from '../components/Wave';
-import Card from '../components/Card';
-import Experience from '../components/Experience';
-import Section from '../components/Section';
-import Contact from '../components/Contact'
-import Layout from '../components/Layout';
+import React from "react"
+
+import Layout from "../components/Layout"
+import Card from "../components/Card"
+import Wave from "../components/Wave"
+import styled from "styled-components"
+import ExperienceCell from "../components/Experience"
+import Contact from "../components/Contact"
 
 const IndexPage = () => (
   <Layout>
     <div className="Hero">
-        <div className="HeroGroup">
-          <h1>Michael McComas</h1>
-          <p>Computer Scientist and Android Devloper</p>
-          <Link to="/page-2/">Resume</Link>
-          <Wave/>
-        </div>
-        <div className="About" id={"about"}>
+      <div className="HeroGroup">
+        <h1>Michael McComas</h1>
+        <p>Computer Scientist and Android Developer</p>
+        <Wave />
+      </div>
+      <div className="AboutSection" id={"about"}>
         <h2>About</h2>
         <p>
-        Hello! My name is Michael McComas and I am an Android Developer :D
+          Hey there! My name is Michael McComas and I'm an computer scientist studying at Middle Tennessee State University. 
+        I would be getting a degree in android development but unfortunately it wasn't an option  :D. 
+        So instead, I'll have to let my personal projects speak for themselves. I've learned a lot throughout my android experience,
+         but I am always on the lookout to learn more!
         </p>
       </div>
-        <div className="Cards" id={"projects"}>
+      <div className="Cards" id={"projects"}>
         <h2>Applications</h2>
         <div className="CardGroup">
           <Card
-            title="Dinner Decided"
-            link="https://apps.apple.com/us/app/iheart-radio-music-podcasts/id290638154"
-            text="Google Play Store Link"
-            disc="Created"
-            image={require("../images/wallpaper.jpg")}
+            title="Water Me"
+            link=""
+            text="Project Link"
+            disc="Built"
+            image={require("../images/ic_water-me.png")}
+          />
+          <Card
+            title="Dinner Decider"
+            text="Project Link"
+            disc="Built"
+            link="https://apps.apple.com/us/app/disneyland/id1022164656"
+            image={require("../images/ic_dinner_decided.png")}
           />
           <Card
             title="Fake or Fact"
-            link="https://apps.apple.com/us/app/iheart-radio-music-podcasts/id290638154"
-            text="Google Play Store Link"
-            disc="Created"
-            image={require("../images/wallpaper.jpg")}
-          />
-          <Card
-            title="Water Me"
-            link="https://apps.apple.com/us/app/iheart-radio-music-podcasts/id290638154"
-            text="Google Play Store Link"
-            disc="Created"
-            image={require("../images/wallpaper.jpg")}
+            text="Google Play"
+            disc="Built"
+            link="https://play.google.com/store/apps/details?id=com.michael.fakeorfact&hl=en_US"
+            image={require("../images/ic_fake_or_fact.png")}
           />
         </div>
-     </div>
-     <div className="ExperienceSection" id={"experience"} >
+      </div>
+      <div className="ExperienceSection" id={"experience"} >
         <h2>Experience</h2>
-        <Experience
-          image={require("../images/wallpaper3.jpg")}
-          link="https://www.iheartmedia.com"
-          company="Freelance"
+        <ExperienceCell
+          image={require("../images/logo_android.jpg")}
+          link=""
+          company="Android Freelance"
           position="Android Developer"
           time="Aug 2019 - Present"
-          details="Some desc"
+          details="I am a developer"
         />
-        <Experience
-          image={require("../images/wallpaper2.jpg")}
-          link="https://thewaltdisneycompany.com"
+        <ExperienceCell
+          image={require("../images/logo_prgx.jpg")}
+          link=""
           company="PRGX"
           position="IT Programmer"
           time="Jun 2019 - Present"
-          details="Some desc"
+          details="I am a programmer"
         />
       </div>
+
       <div id={"contact"}>
         <h2>Contact</h2>
         <ContactSection>
           <Contact
-            logo={require("../images/wallpaper2.jpg")}
+            logo={require("../images/logo-github.png")}
             link="https://github.com/McComas-Developer"
             title="Github"
           />
           <Contact
-            logo={require("../images/wallpaper3.jpg")}
-            link="https://www.linkedin.com/in/michael-mccomas/"
+            logo={require("../images/logo-linkedin.png")}
+            link="https://www.linkedin.com/in/-michael-mccomas/"
             title="LinkedIn"
           />
           <Contact
-            logo={require("../images/wallpaper.jpg")}
-            link="mailto: michael.ray.mccomas@gmail.com"
+            logo={require("../images/logo-email.png")}
+            link="mailto: michael.ray.mcomas@gmail.com"
             title="Email"
           />
         </ContactSection>
       </div>
     </div>
-</Layout>
+  </Layout>
 )
+
+export default IndexPage
 
 const ContactSection = styled.div`
   margin: 0 auto;
@@ -100,5 +104,3 @@ const ContactSection = styled.div`
   justify-items: center;
   align-items: center;
 `
-
-export default IndexPage

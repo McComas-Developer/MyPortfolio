@@ -22,7 +22,7 @@ body {
   }
   
   .Hero {
-    background: url("../images/wallpaper.jpg");
+    background: url("../images/wallpaper4.jpg");
     position: relative;
     height: 960px;
     background-size: cover;
@@ -48,21 +48,14 @@ body {
     font-size: 30px;
     line-height: 1.5;
     opacity: 0;
+    color: rgba(255, 255, 255, 0.8);
     animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
   
   @media (max-width: 640px) {
-    .HeroGroup {
-      padding: 100px 20px;
-    }
-  
-    .Hero h1 {
-      font-size: 40px;
-    }
-  
-    .Hero h2 {
-      font-size: 36px;
-    }
+    .HeroGroup { padding: 100px 20px; }
+    .Hero h1 { font-size: 40px; }
+    .Hero h2 { font-size: 36px; }
   }
   
   @keyframes HeroAnimation {
@@ -112,13 +105,8 @@ body {
   }
   
   @media (max-width: 640px) {
-    .Hero .Logos {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .Cards h2 {
-      font-size: 30px;
-    }
+    .Hero .Logos { grid-template-columns: repeat(3, 1fr); }
+    .Cards h2 { font-size: 30px; }
   
     .AboutSection p {
       margin: 0 40px 200px;
