@@ -35,10 +35,10 @@ const IndexPage = () => (
             image={require("../images/ic_water-me.png")}
           />
           <Card
-            title="Dinner Decider"
-            text="Project Link"
+            title="Dinnerly"
+            text="Google Play"
             disc="Built"
-            link="https://apps.apple.com/us/app/disneyland/id1022164656"
+            link="https://play.google.com/store/apps/details?id=com.michael.dinnerly"
             image={require("../images/ic_dinner_decided.png")}
           />
           <Card
@@ -54,19 +54,26 @@ const IndexPage = () => (
         <h2>Experience</h2>
         <ExperienceCell
           image={require("../images/logo_android.jpg")}
-          link=""
           company="Android Freelance"
           position="Android Developer"
           time="Aug 2019 - Present"
-          details="I am a developer"
+          details="In early August of 2019, I began to learn android through small projects such as a tip calculator and small two
+                  button games. Over the next several months I learned more about android architecture patterns
+                  and how to properly design an application. I learned about MVVM, JetPack Libraries: Navigation Component, Room, 
+                  Live Data, 'Seperation of Concerns', GitHub: version control, Kotlin, Firebase, and so much more."
         />
         <ExperienceCell
           image={require("../images/logo_prgx.jpg")}
-          link=""
+          link="https://www.prgx.com"
           company="PRGX"
           position="IT Programmer"
           time="Jun 2019 - Present"
-          details="I am a programmer"
+          details="In early june of 2019 I had the opportunity to work with PRGX to create 
+                  new in-house applications. I used Microsoft access and SQL databases to create
+                  dynamic tools to track, report, view, and analyze data. I had the honor of having 
+                  one of the tools I created adopted by their entire North American division. Working
+                  here has allowed me to gain knowledge of how to analyze/make data readable, and show
+                  me the product production process."
         />
       </div>
 
